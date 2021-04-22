@@ -48,8 +48,7 @@ $(document).ready(function () {
                     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
                 });
 
-                circle = L.marker([latitud, longitud], {icon: greenIcon}).addTo(map)
-                    .addTo(elmapa)
+                circle = L.marker([latitud, longitud], {icon: greenIcon}).addTo(elmapa)
                     .on("click", vinculo);
                 function vinculo() {
                     window.open(more, "_blank", "noopener");
